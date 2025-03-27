@@ -8,14 +8,48 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   
+    
     <style>
        html {
       margin: 0;
       padding: 0;
       width: 100%;
-         background-color: MistyRose;
+      background-color: MistyRose;
       }
+      
+  /*
+Code copied from: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black
+Author: W3Schools
+Name: Horizontal Navigation Bar Examples
+Description: Format on how to code a horizontal navigation bar
+Date retrieved: March 27, 2025
+--> */   
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F9F2EA;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 30px 25px;
+  text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: bold;
+  color: PaleVioletRed;
+  font-size: 20px;
+}
+
+
       
       #header {
         margin: 0px;
@@ -314,7 +348,7 @@
 
 
 <div id="header">
-        <a href="https://ca.pinterest.com/" target="_blank">
+      <!--  <a href="https://ca.pinterest.com/" target="_blank">
           <button class="button">contact</button>
         </a>
         
@@ -326,7 +360,13 @@
         </a>
         <a href="https://ca.pinterest.com/" target="_blank">
         <button class="button">home</button>
-        </a>
+        </a> -->
+  <ul>
+  <li><a class="active" href="#home">contact</a></li>
+  <li><a href="https://ca.pinterest.com/" target="_blank">playground</a></li>
+  <li><a href="#contact">projects</a></li>
+  <li><a href="#about">home</a></li>
+</ul>
     </div>
   
   </body>
